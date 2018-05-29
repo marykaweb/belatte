@@ -178,7 +178,7 @@ gulp.task('copy:build:files', function(callback) {
 gulp.task('default', function(callback){
     runSequence(
     	'clean:build',
-    	['styles', 'pug', 'svg', 'copy:libs', 'copy:libs-local', c, 'copy:img', 'copy:js'],
+    	['styles', 'pug', 'svg', 'copy:libs', 'copy:libs-local', 'copy:build:files', 'copy:img', 'copy:js'],
     	'server',
 		callback
     )
