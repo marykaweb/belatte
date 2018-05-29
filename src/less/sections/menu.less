@@ -1,0 +1,40 @@
+.card_position {
+	display: flex;
+}
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+.card:not(:last-child) {
+	margin-right: 30px;
+}
+.card__title {
+	color: #000;
+	font-family: "Playfair Display";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 133px;
+	&--coffee {
+		background-image: url(../img/bg/cup-of-coffee.png);
+		background-color: rgba(236, 236, 236, 0.85);
+		background-size: 30%;
+		background-repeat: no-repeat;
+	}
+	&--tea {
+		background-image: url(../img/bg/tea-realisticshots.png);
+		background-color: rgba(236, 236, 236, 0.85);
+		background-size: cover;
+		width: 400px;
+		height: 300px;
+	}
+	&--deserts {
+		background-image: url(../img/bg/desert.png);
+		background-color: rgba(245, 215, 110, 0.85);
+		background-size: cover;
+		width: 400px;
+		height: 300px;
+	}
+}
