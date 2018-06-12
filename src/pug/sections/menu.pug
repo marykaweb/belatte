@@ -5,19 +5,25 @@ include ../mixins/card.pug
 	.cards
 		.card
 			.card__title.card__title--coffee Coffee
-			+card("Latte", "3.00")
-			+card("Mocha", "3.25")
-			+card("Expresso", "3.75")
-			+card("Capuccino", "3.00")
+			.card-price
+				+card("Latte", "$3.00")
+				+card("Mocha", "$3.25")
+				+card("Expresso", "$3.75")
+				+card("Capuccino", "$3.00")
 		.card
 			.card__title.card__title--tea Tea
-			+card("Iced tea", "2.75")
-			+card("Cold brew", "3.25")
-			+card("Jasmine green", "3.75")
-			+card("Peppermint Herbal", "3.00")
+			.card-price
+				+card("Iced tea", "$2.75")
+				+card("Cold brew", "$3.25")
+				+card("Jasmine green", "$3.75")
+				+card("Peppermint Herbal", "$3.00")
 		.card
 			.card__title.card__title--deserts Desserts
-			+card("Tiramisu", "3.00")
-			+card("Cheese cake", "3.25")
-			+card("Black forest", "3.75")
-			+card("Brownie", "3.00")
+			.card-price
+				+card("Tiramisu", "$3.00")
+				+card("Cheese cake", "$3.25")
+				+card("Black forest", "$3.75")
+				+card("Brownie", "$3.00")
+	.button--full-menu
+			a(href="#").button__link--full-menu See full menu
+include ../elements/divider.pug

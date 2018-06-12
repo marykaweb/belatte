@@ -1,0 +1,75 @@
+.testimonials-block {
+	display: flex;
+	height: 425px;
+	overflow: hidden;
+	width: 100%;
+	background-color: #39312f;
+}
+.testimonials-block-image {
+	width: 70%;
+	height: 425px;
+	background-color: #39312f;
+	display: flex;
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: auto;
+	}
+}
+.testimonials-block-opinion {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #39312f;
+	height: 425px;
+	overflow: hidden;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.testimonials-block-opinion__avatar {
+	margin-top: 98px;
+	img {
+		width: 84px;
+		height: 84px;
+		border-radius: 84px;
+	}
+}
+.testimonials-block-opinion__name {
+	color: #f5d76e;
+	font-family: "Playfair Display";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.testimonials-block-opinion__text {
+	width: 260px;
+	color: #ffffff;
+	font-family: 'Lato';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.testimonials-block-opinion__pagination {
+	margin-bottom: 116px;
+	display: flex;
+}
+.testimonials-block-opinion__pagination-item {
+	width: 11px;
+	height: 11px;
+	border-radius: 11px;
+	background-color: #FFF;
+	cursor: pointer;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+.circle-active {
+	background-color: #39312f;
+	border: 1px solid #fff;
+}

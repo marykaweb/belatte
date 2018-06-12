@@ -1,9 +1,19 @@
-.card_position {
-	display: flex;
+.menu__title {
+	text-align: center;
+	color: #2f2f2f;
+	font-family: "Playfair Display";
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
 }
 .cards {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	overflow: hidden;
+}
+.card-price {
+	margin-top: 44px;
 }
 .card:not(:last-child) {
 	margin-right: 30px;
@@ -18,23 +28,37 @@
 	text-align: center;
 	padding-top: 133px;
 	&--coffee {
-		background-image: url(../img/bg/cup-of-coffee.png);
+		background-image: url(../img/cardimg/coffee.png);
 		background-color: rgba(236, 236, 236, 0.85);
-		background-size: 30%;
-		background-repeat: no-repeat;
+		background-size: cover;
+		width: 400px;
+		height: 300px;
 	}
 	&--tea {
-		background-image: url(../img/bg/tea-realisticshots.png);
+		background-image: url(../img/cardimg/tea.png);
 		background-color: rgba(236, 236, 236, 0.85);
 		background-size: cover;
 		width: 400px;
 		height: 300px;
 	}
 	&--deserts {
-		background-image: url(../img/bg/desert.png);
+		background-image: url(../img/cardimg/deserts.png);
 		background-color: rgba(245, 215, 110, 0.85);
 		background-size: cover;
 		width: 400px;
 		height: 300px;
 	}
+}
+.card_position {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 77px;
+	padding-right: 87px;
+}
+.card_position-name {
+	color: #28211f;
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 28px;
 }
